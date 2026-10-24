@@ -1,0 +1,227 @@
+/* header section */
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/hero-bg.jpeg);
+ background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    
+    
+.section_title{
+    position: relative;
+    padding-left: 10px;
+
+}
+.section_title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color:#1c4875 ;
+    border-radius: 5px;
+}
+    .section_title{
+    position: relative;
+    padding-left: 10px;
+
+}
+.section_title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color:#1c4875 ;
+    border-radius: 5px;
+}
+   
+}
+
+header .header-caption h1{
+    font-size: 60px;
+}
+
+header .header-caption span{
+    font-size: 30px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* navbar section */
+
+.navbar .nav-item{
+    position: relative;
+}
+
+.navbar .nav-item::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+
+}
+.navbar .nav-item:hover::after{
+    width: 90%;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* about section */
+
+section{
+    padding-top: 100px;
+}
+
+.list-unstyled span{
+    font-weight: bold;
+} 
+
+#about h2{
+    position: relative;
+}
+
+#about h2::after{
+    content: '';
+    width: 20%;
+    height: 3px;
+    background-color: rgb(103, 22, 22);
+    position: absolute;
+    top: 40px;
+    left: 0;
+} 
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* services section */
+
+#services .card .circle{
+    width: 100px;
+    height: 100px;
+    border: 8px solid rgb(0, 123, 255) ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 1s;
+}  
+
+ #services .card:hover .circle{
+    background-color: rgb(0,123,255);
+    color: #fff;
+    border: 8px solid rgb(211, 211, 214) ;
+}   
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* work section */
+#work {
+   background-image:linear-gradient(rgba(0,123,255,0.7), rgba(0,123,255,0.7)), url(../images/counters-bg.jpg);
+ background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    margin-top: 30px;
+    padding: 50px 0;
+}
+
+
+
+/* **************************testimonial section********************************* */
+.testimonial-box {
+  background: linear-gradient(rgba(0, 102, 204, 0.8), rgba(0, 102, 204, 0.8)), 
+              url('../images/overlay-bg.jpg') center/cover;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+/* **********************************contact section************************************** */
+#contact{
+    background-image:linear-gradient(rgba(0,123,255,0.5), rgba(0,123,255,0.5)), url(../images/overlay-bg.jpg);
+ background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;}
+    
+.title-left {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #1e1e1e;
+}
+
+.title-left::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0d6efd;
+    width: 100px;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: none;
+}
+
+.social-icon {
+    width: 42px;
+    height: 42px;
+    border: 3px solid #0d6efd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e1e1e;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+/* ********************************footer section************************************ */
+footer {
+  text-align: center;
+  color: #fff;
+  padding: 25px 0;
+  background: #0078ff; 
+}
+
+footer .copyright {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+footer .credits {
+  font-size: 13px;
+  color: #f1f1f1;
+}
+
+footer .credits a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .credits a:hover {
+  color: #cde1f8;
+  text-decoration: underline;
+}
